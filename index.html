@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Luthfi Aqrobahu | Portofolio</title>
+<meta name="description" content="Portofolio Muhammad Luthfi Aqrobahu, mahasiswa Teknik Informatika Polije PSDKU Nganjuk.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2334e08a'/><text x='50' y='68' font-size='56' text-anchor='middle' font-family='sans-serif' font-weight='800' fill='%2307110c'>L</text></svg>">
+<style>
+:root{--bg:#07110c;--bg2:#0c1a13;--card:rgba(255,255,255,.045);--line:rgba(255,255,255,.1);--ink:#eef6f0;--mute:#9fb3a6;--mint:#34e08a;--amber:#f0b45a;--f:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 var(--f);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 85% 5%,rgba(52,224,138,.18),transparent 70%),radial-gradient(500px 400px at 5% 40%,rgba(240,180,90,.10),transparent 70%)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:4px;padding:6px;border:1px solid var(--line);border-radius:999px;background:rgba(12,26,19,.75);backdrop-filter:blur(14px);max-width:calc(100% - 20px);overflow-x:auto}
+.nav a{padding:7px 16px;border-radius:999px;text-decoration:none;color:var(--mute);font-size:.92rem;white-space:nowrap}
+.nav a:hover{background:rgba(52,224,138,.14);color:var(--mint)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:999px;color:var(--mute);font-size:.9rem}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(52,224,138,.2)}
+h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:20px 0 18px}
+h1 span{background:linear-gradient(90deg,var(--mint),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:1.25rem;color:var(--ink);font-weight:600}
+.lead{color:var(--mute);max-width:52ch;margin:14px 0 30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:13px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid var(--line);transition:.2s}
+.btn.p{background:var(--mint);color:#04120a;border-color:var(--mint)}
+.btn.p:hover{box-shadow:0 0 30px rgba(52,224,138,.5)}
+.btn.s:hover{background:var(--card);border-color:var(--mint)}
+.photo{position:relative;justify-self:center;width:min(100%,340px)}
+.photo:before{content:"";position:absolute;inset:-14px;border-radius:36px;background:linear-gradient(135deg,var(--mint),var(--amber));filter:blur(28px);opacity:.45}
+.photo img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:30px;border:1px solid var(--line)}
+.chip{position:absolute;padding:8px 14px;border-radius:14px;background:rgba(12,26,19,.85);backdrop-filter:blur(10px);border:1px solid var(--line);font-size:.85rem;font-weight:600}
+.chip.a{left:-22px;bottom:50px}.chip.b{right:-14px;top:36px;color:var(--amber)}
+section{padding:84px 0}
+.eyebrow{color:var(--mint);font-weight:700;font-size:.9rem;margin-bottom:8px}
+h2{font-size:clamp(1.9rem,4.5vw,3rem);letter-spacing:-.025em;line-height:1.1;margin-bottom:34px}
+.glass{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;backdrop-filter:blur(6px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.stats b{display:block;font-size:1.6rem;color:var(--mint)}.stats small{color:var(--mute)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.pj{grid-column:span 3;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.pj.wide{grid-column:span 6;flex-direction:row;align-items:center;gap:30px}
+.pj.wide .t{flex:1}
+.pj h3{font-size:1.45rem;letter-spacing:-.02em;line-height:1.2}
+.when{color:var(--amber);font-size:.88rem;font-weight:600}
+.pj ul{padding-left:1.1em;color:var(--mute)}.pj li{margin-bottom:6px}
+.pj .shot{width:100%;border-radius:14px;border:1px solid var(--line);display:block}
+.pj .ph{max-width:210px;border-radius:26px;border:4px solid #1b2a21;display:block;margin:0 auto}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.84rem;color:var(--mint)}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+.split img{width:100%;border-radius:22px;border:1px solid var(--line)}
+.split ul{padding-left:1.1em;color:var(--mute)}.split li{margin-bottom:8px}
+.split h3{font-size:1.5rem;letter-spacing:-.02em;margin:4px 0 12px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skills h3{margin-bottom:12px;font-size:1.15rem}
+.skills .tags span{color:var(--ink)}
+.cta{text-align:center;padding:60px 28px;background:linear-gradient(135deg,rgba(52,224,138,.16),rgba(240,180,90,.1));border-radius:32px}
+.cta h2{margin-bottom:12px}.cta p{color:var(--mute);margin-bottom:26px}
+.cta .btns{justify-content:center}
+footer{padding:30px 0 40px;text-align:center;color:var(--mute);font-size:.9rem}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){.hero .wrap,.split{grid-template-columns:1fr}.photo{order:-1;width:240px}.pj,.pj.wide{grid-column:span 6;flex-direction:column;align-items:stretch}.stats{grid-template-columns:1fr 1fr}.skills{grid-template-columns:1fr}.chip.a{left:-8px}.chip.b{right:-8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+
+.clk{cursor:pointer}
+.clk:after{content:"Lihat detail";position:absolute;top:16px;right:16px;font-size:.78rem;font-weight:700;color:var(--bg);background:var(--mint);padding:3px 12px;border-radius:999px;opacity:.9}
+.glass.clk{position:relative;transition:opacity .7s,transform .25s,border-color .25s,box-shadow .25s}
+.rv.in.clk:hover,.rv.in.clk:focus-visible{transform:translateY(-5px);border-color:var(--mint);box-shadow:0 18px 40px -18px rgba(52,224,138,.45)}
+dialog{border:1px solid var(--line);background:#0d1c14;color:var(--ink);border-radius:26px;width:min(760px,calc(100% - 24px));max-height:90vh;padding:0;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+dialog[open]{animation:pop .28s ease}
+dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(5px)}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+.mx{position:sticky;top:0;float:right;margin:14px 14px 0 0;z-index:2;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(7,17,12,.85);color:var(--ink);font-size:1.3rem;cursor:pointer}
+.mx:hover{background:var(--mint);color:#04120a}
+.mb{padding:30px 30px 34px}
+.mb h3{font-size:1.8rem;letter-spacing:-.02em;line-height:1.15;margin:4px 0 6px;padding-right:40px}
+.mb .meta{color:var(--mute);margin-bottom:18px}
+.mb img{width:100%;max-height:360px;object-fit:contain;border-radius:16px;border:1px solid var(--line);background:#07110c;margin:6px 0 18px}
+.mb h4{color:var(--mint);font-size:.95rem;margin:18px 0 8px}
+.mb ul{padding-left:1.1em;color:var(--mute)}.mb li{margin-bottom:7px}
+.mb p{color:var(--mute)}
+body.lock{overflow:hidden}
+@media(max-width:820px){.mb{padding:22px 20px 28px}.clk:after{top:12px;right:12px}}
+
+.glass{position:relative}
+.glass:before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(52,224,138,.15),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.glass:hover:before{opacity:1}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--mint),var(--amber));z-index:30}
+.nav a.on{background:rgba(52,224,138,.18);color:var(--mint)}
+.hero{position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:fl 14s ease-in-out infinite alternate;pointer-events:none}
+.b1{width:340px;height:340px;background:var(--mint);top:8%;right:6%}
+.b2{width:280px;height:280px;background:var(--amber);bottom:2%;left:-4%;animation-delay:-6s;opacity:.2}
+@keyframes fl{to{transform:translate(-40px,50px) scale(1.15)}}
+.typed{margin:6px 0 0;color:var(--mint);font-weight:600;min-height:1.7em}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--mint);margin-left:3px;vertical-align:-.15em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.ring{position:absolute;border:1px dashed rgba(52,224,138,.45);border-radius:50%;pointer-events:none;animation:sp 40s linear infinite}
+.r1{inset:-46px}.r2{inset:-86px;border-color:rgba(240,180,90,.35);animation-direction:reverse;animation-duration:60s}
+@keyframes sp{to{transform:rotate(360deg)}}
+.mq{overflow:hidden;border-block:1px solid var(--line);background:rgba(255,255,255,.02);padding:16px 0}
+.mqt{display:flex;gap:14px;width:max-content;animation:mqa 32s linear infinite}
+.mqt span{border:1px solid var(--line);border-radius:999px;padding:6px 20px;color:var(--mint);font-weight:600;white-space:nowrap;background:var(--card)}
+@keyframes mqa{to{transform:translateX(-50%)}}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.facts .glass{padding:20px 22px;display:block;color:inherit}
+.facts small{display:block;color:var(--mute);font-size:.85rem}
+.facts b{display:block;font-size:1.05rem;margin-top:4px;word-break:break-word}
+a.glass:hover{border-color:var(--mint)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:84px;margin-bottom:6px;padding:10px;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.2)}
+.bars i{flex:1;height:var(--h);background:linear-gradient(var(--mint),rgba(52,224,138,.12));border-radius:6px 6px 0 0;transform:scaleY(0);transform-origin:bottom;transition:transform .9s .2s}
+.rv.in .bars i{transform:none}
+.vz{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:270px}
+.vz div{border:1px solid var(--line);border-radius:16px;padding:18px 16px;background:linear-gradient(135deg,rgba(52,224,138,.14),rgba(255,255,255,.02));font-weight:700}
+.vz small{display:block;color:var(--mute);font-weight:400}
+.tl{list-style:none;padding:0;position:relative;display:grid;gap:18px}
+.tl:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(var(--mint),var(--amber));opacity:.5}
+.tl li{width:calc(50% - 34px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 20px;position:relative}
+.tl li:nth-child(odd){justify-self:start;text-align:right}
+.tl li:nth-child(even){justify-self:end}
+.tl li:after{content:"";position:absolute;top:22px;width:14px;height:14px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(52,224,138,.2)}
+.tl li:nth-child(odd):after{right:-42px}.tl li:nth-child(even):after{left:-42px}
+.tl h3{font-size:1.1rem;margin:2px 0}.tl p{color:var(--mute);font-size:.95rem}
+@media(max-width:820px){.tl:before{left:8px}.tl li,.tl li:nth-child(odd),.tl li:nth-child(even){width:calc(100% - 34px);justify-self:end;text-align:left}.tl li:nth-child(odd):after,.tl li:nth-child(even):after{left:-34px;right:auto}.r1{inset:-24px}.r2{display:none}.vz{min-width:0}}
+@media(prefers-reduced-motion:reduce){.blob,.ring,.mqt,.caret{animation:none}.bars i{transform:none;transition:none}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Menu utama"><a href="#profil">Profil</a><a href="#proyek">Proyek</a><a href="#pengalaman">Pengalaman</a><a href="#perjalanan">Perjalanan</a><a href="#sertifikat">Sertifikat</a><a href="#skill">Skill</a><a href="#kontak">Kontak</a></nav>
+
+<div id="bar"></div>
+<main>
+<div class="hero"><i class="blob b1"></i><i class="blob b2"></i><div class="wrap">
+  <div>
+    <span class="pill"><i></i>Politeknik Negeri Jember, PSDKU Nganjuk</span>
+    <h1>Muhammad Luthfi <span>Aqrobahu</span></h1>
+    <p class="role">Mahasiswa Teknik Informatika · Web &amp; Software Developer</p>
+    <p class="typed">Saya <b id="typed">membangun website dan sistem informasi</b><i class="caret"></i></p>
+    <p class="lead">Tertarik pada pengembangan perangkat lunak, pemrograman web, database management, dan integrasi sistem IoT.</p>
+    <div class="btns"><a class="btn p" href="#proyek">Lihat proyek</a><a class="btn s" href="#kontak">Hubungi saya</a></div>
+  </div>
+  <div class="photo"><span class="ring r1"></span><span class="ring r2"></span>
+    <img data-k="foto" src="assets/foto.jpg" alt="Foto Muhammad Luthfi Aqrobahu">
+    <span class="chip a">Semester 3 · D4 TI</span>
+  </div>
+</div></div>
+
+<section id="profil"><div class="wrap rv">
+  <p class="eyebrow">Profil</p>
+  <h2>Tentang saya</h2>
+  <div class="glass">
+    <p>Mahasiswa Teknik Informatika Politeknik Negeri Jember (PSDKU Nganjuk) dengan ketertarikan kuat pada pengembangan perangkat lunak, pemrograman web, database management, dan integrasi sistem IoT. Memiliki pengalaman praktis dalam merancang sistem manajemen produksi berbasis web serta sistem pemesanan digital untuk UMKM Djawara Dawet. Berpengalaman magang operasional di divisi IT dan Manajemen RSUD Srengat serta aktif mengikuti pelatihan kecerdasan buatan dan IoT melalui Samsung Innovation Campus (SIC) Batch 5.</p>
+    <div class="stats"><div><b data-count="3">3</b><small>Proyek software</small></div><div><b data-count="1">1</b><small>Magang RSUD</small></div><div><b>SIC 5</b><small>Samsung Innovation Campus</small></div><div><b>2029</b><small>Perkiraan lulus</small></div></div>
+  </div>
+</div></section>
+
+<div class="mq" aria-hidden="true"><div class="mqt"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Figma</span><span>Git</span><span>UI/UX</span><span>Web Development</span><span>Database</span><span>IoT</span><span>Troubleshooting</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Figma</span><span>Git</span><span>UI/UX</span><span>Web Development</span><span>Database</span><span>IoT</span><span>Troubleshooting</span></div></div>
+
+<section id="sekilas"><div class="wrap">
+  <p class="eyebrow rv">Sekilas</p>
+  <h2 class="rv">Fakta singkat</h2>
+  <div class="facts">
+    <div class="glass rv"><small>Asal</small><b>Blitar, Jawa Timur</b></div>
+    <div class="glass rv"><small>Kampus</small><b>Polije PSDKU Nganjuk</b></div>
+    <div class="glass rv"><small>Program studi</small><b>D4 Teknik Informatika, semester 3</b></div>
+    <div class="glass rv"><small>Bahasa</small><b>Indonesia (fasih), Inggris (dasar)</b></div>
+  </div>
+  <div class="glass rv" style="margin-top:16px"><h3 style="font-size:1.15rem;margin-bottom:12px">Mata kuliah relevan</h3>
+    <div class="tags"><span>Pemrograman Dasar</span><span>Konsep Basis Data</span><span>Sistem Informasi Berbasis Web</span><span>Struktur Data</span><span>Interaksi Manusia</span><span>Management Proyek</span><span>Mobile Application Advance</span></div></div>
+</div></section>
+
+<section id="proyek"><div class="wrap">
+  <p class="eyebrow rv">Proyek</p>
+  <h2 class="rv">Proyek pengembangan software</h2>
+  <div class="bento">
+    <article class="glass pj wide rv clk" tabindex="0" role="button" data-m="dawet-app">
+      <div class="t">
+        <span class="when">Semester 2 · 2026</span>
+        <h3>Sistem Aplikasi Pemesanan Djawara Dawet</h3>
+        <p style="color:var(--mute);font-size:.95rem;margin-bottom:8px">Developer / Full-Stack Project, Politeknik Negeri Jember</p>
+        <ul>
+          <li>Merancang dan membangun aplikasi pemesanan untuk mendigitalisasi proses transaksi pelanggan UMKM Djawara Dawet.</li>
+          <li>Mengimplementasikan fitur pengelolaan katalog produk, keranjang pemesanan, serta kalkulasi otomatis total transaksi secara real-time.</li>
+          <li>Menyusun skema basis data untuk penyimpanan riwayat transaksi secara terstruktur dan aman.</li>
+        </ul>
+        <div class="tags" style="margin-top:14px"><span>Figma</span><span>Web</span><span>Mobile</span><span>Database</span></div>
+      </div>
+      <img class="ph" data-k="aplikasi" src="assets/aplikasi.jpg" alt="Beranda aplikasi pemesanan Djawara Dawet" loading="lazy">
+    </article>
+
+    <article class="glass pj rv clk" tabindex="0" role="button" data-m="web">
+      <img class="shot" data-k="web" src="assets/web.jpg" alt="Halaman website Djawara Dawet" loading="lazy">
+      <span class="when">Website Djawara Dawet</span>
+      <h3>Tampilan website pelanggan</h3>
+      <p style="color:var(--mute)">Halaman beranda dengan menu Home, About, Menu, Galeri, Contact, dan akses login admin.</p>
+    </article>
+
+    <article class="glass pj rv clk" tabindex="0" role="button" data-m="dawet-pro">
+      <div class="bars" aria-hidden="true"><i style="--h:45%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:90%"></i><i style="--h:65%"></i><i style="--h:100%"></i></div>
+      <span class="when">Semester 1 · 2025</span>
+      <h3>Sistem Produksi Djawara Dawet (Dawet-Pro)</h3>
+      <p style="color:var(--mute);font-size:.95rem">Developer / System Analyst, Politeknik Negeri Jember</p>
+      <ul>
+        <li>Mengembangkan sistem manajemen produksi berbasis web untuk memantau penggunaan bahan baku dan jadwal pembuatan produk.</li>
+        <li>Membuat fitur pencatatan stok dan pencapaian target produksi bulanan guna meminimalkan risiko selisih bahan persediaan.</li>
+        <li>Menyiapkan antarmuka admin yang responsif dan mudah digunakan oleh manajer operasional UMKM.</li>
+      </ul>
+    </article>
+
+    <article class="glass pj wide rv clk" tabindex="0" role="button" data-m="matsanam">
+      <div class="t">
+        <span class="when">Proyek Akhir Semester 3 · Tahap pengerjaan</span>
+        <h3>Aplikasi E-Learning MATSANAM ELEARNING</h3>
+        <ul>
+          <li>Mengembangkan aplikasi pembelajaran digital berbasis web "MATSANAM ELEARNING" untuk mendukung kegiatan belajar mengajar di MTsN 6 Nganjuk.</li>
+          <li>Mengintegrasikan fitur pengelolaan materi pembelajaran, pembagian tugas siswa, penilaian online, serta manajemen akun guru dan siswa \1
+      <div class="vz" aria-hidden="true"><div>Materi<small>pembelajaran</small></div><div>Tugas<small>siswa</small></div><div>Penilaian<small>online</small></div><div>Akun<small>guru &amp; siswa</small></div></div>\2
+  </div>
+</div></section>
+
+<section id="pengalaman"><div class="wrap">
+  <p class="eyebrow rv">Pengalaman</p>
+  <h2 class="rv">Pengalaman kerja &amp; magang</h2>
+  <div class="glass split rv clk" tabindex="0" role="button" data-m="magang">
+    <img data-k="magang" src="assets/magang.jpg" alt="Kegiatan magang di RSUD Srengat" loading="lazy">
+    <div>
+      <span class="when">Februari – Maret 2025</span>
+      <h3>IT &amp; Management Intern, RSUD Srengat</h3>
+      <p style="color:var(--mute);margin-bottom:10px">Divisi Teknologi Informasi &amp; Manajemen</p>
+      <ul>
+        <li>Melaksanakan pengelolaan dan pemeliharaan rutin pada perangkat keras, jaringan lokal (LAN), dan infrastruktur perangkat lunak rumah sakit.</li>
+        <li>Mendukung operasional administrasi manajemen rumah sakit untuk memastikan integrasi data pelayanan kesehatan berjalan lancar.</li>
+        <li>Melakukan troubleshooting tingkat dasar pada sistem informasi rumah sakit dan memberikan dukungan teknis kepada staf operasional.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="facts rv" style="margin-top:16px">
+    <div class="glass"><small>Perangkat keras</small><b>Pemeliharaan rutin</b></div>
+    <div class="glass"><small>Jaringan</small><b>LAN rumah sakit</b></div>
+    <div class="glass"><small>Perangkat lunak</small><b>Infrastruktur &amp; sistem informasi</b></div>
+    <div class="glass"><small>Dukungan</small><b>Teknis untuk staf operasional</b></div>
+  </div>
+</div></section>
+
+<section id="perjalanan"><div class="wrap">
+  <p class="eyebrow rv">Perjalanan</p>
+  <h2 class="rv">Dari sekolah sampai proyek nyata</h2>
+  <ul class="tl"><li class="rv"><span class="when">2022</span><h3>Mulai di MAS Ma'arif Udanawu Blitar</h3><p>Akademik Umum IPS dengan keterampilan RPL.</p></li><li class="rv"><span class="when">April 2024</span><h3>Samsung Innovation Campus Batch 5</h3><p>Menyelesaikan Stage 2, Internet of Things.</p></li><li class="rv"><span class="when">Februari – Maret 2025</span><h3>Magang di RSUD Srengat</h3><p>IT dan Manajemen: hardware, LAN, dan sistem informasi rumah sakit.</p></li><li class="rv"><span class="when">2025</span><h3>Kuliah di Polije PSDKU Nganjuk</h3><p>Lulus dari MAS Ma'arif dan mulai D4 Teknik Informatika.</p></li><li class="rv"><span class="when">Semester 1 · 2025</span><h3>Dawet-Pro</h3><p>Sistem produksi berbasis web untuk Djawara Dawet.</p></li><li class="rv"><span class="when">Semester 2 · 2026</span><h3>Aplikasi Pemesanan Djawara Dawet</h3><p>Digitalisasi transaksi pelanggan UMKM.</p></li><li class="rv"><span class="when">Semester 3</span><h3>MATSANAM ELEARNING</h3><p>Aplikasi pembelajaran digital untuk MTsN 6 Nganjuk, masih dikerjakan.</p></li><li class="rv"><span class="when">2029</span><h3>Perkiraan lulus</h3><p>Target menyelesaikan D4 Teknik Informatika.</p></li></ul>
+</div></section>
+
+<section id="sertifikat"><div class="wrap">
+  <p class="eyebrow rv">Sertifikasi &amp; pelatihan</p>
+  <h2 class="rv">Samsung Innovation Campus</h2>
+  <div class="glass split rv clk" tabindex="0" role="button" data-m="sic">
+    <div>
+      <h3>SIC Batch 5: Stage 2, Internet of Things</h3>
+      <p style="color:var(--mute)">Samsung Electronics, 20–27 April 2024. Mempelajari konsep Internet of Things (IoT), pemrosesan data sensor, integrasi perangkat keras dengan web dashboard, serta dasar-dasar Artificial Intelligence.</p>
+    </div>
+    <img data-k="sertifikat" src="assets/sertifikat.jpg" alt="Sertifikat Samsung Innovation Campus Batch 5" loading="lazy">
+  </div>
+</div></section>
+
+<section id="skill"><div class="wrap">
+  <p class="eyebrow rv">Keterampilan</p>
+  <h2 class="rv">Skill &amp; pendidikan</h2>
+  <div class="skills">
+    <div class="glass rv"><h3>Technical Skills</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Web Development</span><span>UI/UX (Figma)</span><span>Git</span><span>Troubleshooting</span><span>Microsoft Office</span></div></div>
+    <div class="glass rv"><h3>Soft Skills</h3><div class="tags"><span>Problem Solving</span><span>Analisis Sistem</span><span>Kerja Sama Tim</span><span>Public Speaking</span><span>Kedisiplinan</span><span>Manajemen Waktu</span></div></div>
+    <div class="glass rv"><h3>Pendidikan &amp; Bahasa</h3><p style="color:var(--mute)">D4 Teknik Informatika, Politeknik Negeri Jember (PSDKU Nganjuk), 2025 – sekarang.<br>MAS Ma'arif Udanawu Blitar, 2022 – 2025.<br>Bahasa Indonesia (fasih), Bahasa Inggris (dasar).</p></div>
+  </div>
+</div></section>
+
+<section id="kontak"><div class="wrap">
+  <div class="cta rv">
+    <h2>Mari terhubung</h2>
+    <p>Blitar, Jawa Timur</p>
+    <div class="btns">
+      <a class="btn p" href="mailto:luthfiaqrobahumuhammad@gmail.com">Kirim email</a>
+      <a class="btn s" href="https://wa.me/628575951295" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn s" href="https://www.linkedin.com/in/GANTI-USERNAME-ANDA" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</div></section>
+<div class="wrap"><div class="facts rv" style="margin-bottom:10px">
+  <a class="glass" href="mailto:luthfiaqrobahumuhammad@gmail.com" style="text-decoration:none"><small>Email</small><b>luthfiaqrobahumuhammad@gmail.com</b></a>
+  <a class="glass" href="https://wa.me/628575951295" target="_blank" rel="noopener" style="text-decoration:none"><small>WhatsApp</small><b>+62 857-5951-295</b></a>
+  <div class="glass"><small>Lokasi</small><b>Blitar, Jawa Timur</b></div>
+</div></div>
+</main>
+<footer>© 2026 Muhammad Luthfi Aqrobahu</footer>
+<dialog id="dlg" aria-labelledby="mt"><button class="mx" id="mc" aria-label="Tutup">&times;</button><div class="mb" id="mbody"></div></dialog>
+<script>
+(function(){
+var D={
+'dawet-app':{w:'Semester 2 · 2026',t:'Sistem Aplikasi Pemesanan Djawara Dawet',m:'Developer / Full-Stack Project, Politeknik Negeri Jember',img:'aplikasi',
+ s:'Aplikasi pemesanan untuk mendigitalisasi proses transaksi pelanggan UMKM Djawara Dawet. Prototipe antarmuka dirancang lebih dulu di Figma.',
+ l:['Merancang dan membangun aplikasi pemesanan untuk mendigitalisasi proses transaksi pelanggan.','Pengelolaan katalog produk.','Keranjang pemesanan.','Kalkulasi otomatis total transaksi secara real-time.','Skema basis data untuk penyimpanan riwayat transaksi secara terstruktur dan aman.'],
+ tg:['Figma','UI/UX','Database','Web','Mobile']},
+'web':{w:'Website Djawara Dawet',t:'Tampilan website pelanggan',m:'Halaman beranda Djawara Dawet',img:'web',
+ s:'Website beranda untuk pelanggan dengan tagline "Djawara Dihati. Rasa Klasik Segar Otentik."',
+ l:['Menu navigasi: Home, About, Menu, Galeri, dan Contact.','Tombol Hubungi Kami dan Cari Dawetmu.','Carousel foto produk.','Akses Login Admin untuk pengelolaan.'],tg:['HTML','CSS','JavaScript']},
+'dawet-pro':{w:'Semester 1 · 2025',t:'Sistem Produksi Djawara Dawet (Dawet-Pro)',m:'Developer / System Analyst, Politeknik Negeri Jember',
+ s:'Sistem manajemen produksi berbasis web untuk UMKM Djawara Dawet, dengan perancangan antarmuka dan wireframe di Figma.',
+ l:['Memantau penggunaan bahan baku dan jadwal pembuatan produk.','Pencatatan stok dan pencapaian target produksi bulanan untuk meminimalkan risiko selisih bahan persediaan.','Antarmuka admin yang responsif dan mudah digunakan oleh manajer operasional UMKM.'],tg:['Figma','Wireframe','Web','Manajemen produksi']},
+'matsanam':{w:'Proyek Akhir Semester 3 · Tahap pengerjaan',t:'Aplikasi E-Learning MATSANAM ELEARNING',m:'Untuk MTsN 6 Nganjuk',
+ s:'Aplikasi pembelajaran digital berbasis web untuk mendukung kegiatan belajar mengajar di MTsN 6 Nganjuk.',
+ l:['Pengelolaan materi pembelajaran.','Pembagian tugas siswa.','Penilaian online.','Manajemen akun guru dan siswa secara sistematis.'],
+ b:['Disusun dari wawancara dan observasi dengan 2 guru dan 5 siswa MTs Negeri 6 Nganjuk.','Presensi lama memakai scan barcode KTA, dinilai kurang efisien: antrean panjang dan KTA sering lupa atau hilang.','Sekolah kini mengizinkan siswa membawa smartphone, sehingga presensi online memungkinkan.'],tg:['E-Learning','Web','MTsN 6 Nganjuk']},
+'magang':{w:'Februari – Maret 2025',t:'IT & Management Intern, RSUD Srengat',m:'Divisi Teknologi Informasi & Manajemen',img:'magang',
+ s:'Magang operasional di divisi IT dan Manajemen RSUD Srengat.',
+ l:['Pengelolaan dan pemeliharaan rutin pada perangkat keras, jaringan lokal (LAN), dan infrastruktur perangkat lunak rumah sakit.','Mendukung operasional administrasi manajemen rumah sakit agar integrasi data pelayanan kesehatan berjalan lancar.','Troubleshooting tingkat dasar pada sistem informasi rumah sakit dan dukungan teknis kepada staf operasional.'],tg:['Hardware','LAN','Troubleshooting','Sistem informasi']},
+'sic':{w:'20 – 27 April 2024',t:'Samsung Innovation Campus Batch 5',m:'Stage 2: Internet of Things (IoT), Samsung Electronics',img:'sertifikat',
+ s:'Sertifikat penyelesaian kegiatan belajar Stage 2 IoT, diterbitkan di Jakarta pada 17 September 2024.',
+ l:['Konsep Internet of Things (IoT).','Pemrosesan data sensor.','Integrasi perangkat keras dengan web dashboard.','Dasar-dasar Artificial Intelligence.'],tg:['IoT','AI','Sensor','Web dashboard']}
+};
+var dlg=document.getElementById('dlg'),body=document.getElementById('mbody');
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function open(k){var d=D[k];if(!d)return;var x='<span class="when">'+esc(d.w)+'</span><h3 id="mt">'+esc(d.t)+'</h3><p class="meta">'+esc(d.m)+'</p>';
+ if(d.img){var i=document.querySelector('img[data-k="'+d.img+'"]');if(i)x+='<img src="'+i.src+'" alt="'+esc(d.t)+'">'}
+ x+='<h4>Ringkasan</h4><p>'+esc(d.s)+'</p>';
+ if(d.b){x+='<h4>Latar belakang</h4><ul>'+d.b.map(function(a){return'<li>'+esc(a)+'</li>'}).join('')+'</ul>'}
+ x+='<h4>Fitur dan tanggung jawab</h4><ul>'+d.l.map(function(a){return'<li>'+esc(a)+'</li>'}).join('')+'</ul>';
+ x+='<h4>Kata kunci</h4><div class="tags">'+d.tg.map(function(a){return'<span>'+esc(a)+'</span>'}).join('')+'</div>';
+ body.innerHTML=x;dlg.scrollTop=0;document.body.classList.add('lock');dlg.showModal()}
+document.querySelectorAll('.clk').forEach(function(c){
+ c.addEventListener('click',function(){open(c.dataset.m)});
+ c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(c.dataset.m)}})});
+document.getElementById('mc').addEventListener('click',function(){dlg.close()});
+dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()});
+dlg.addEventListener('close',function(){document.body.classList.remove('lock')});
+})();
+</script>
+<script>
+(function(){var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});
+setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},2500);})();
+</script>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var bar=document.getElementById('bar');
+function sc(){var d=document.documentElement;bar.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100||0)+'%'}
+addEventListener('scroll',sc,{passive:true});sc();
+var links=document.querySelectorAll('.nav a');
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s)});
+document.querySelectorAll('.glass').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+var t=document.getElementById('typed');
+if(t&&!rm){var W=['membangun website dan sistem informasi','merancang UI/UX di Figma','mengelola database MySQL','belajar IoT dan kecerdasan buatan'],wi=0,ci=0,del=false;
+ (function tick(){var w=W[wi];ci+=del?-1:1;t.textContent=w.slice(0,ci);var s=del?25:55;
+  if(!del&&ci===w.length){del=true;s=1500}else if(del&&ci===0){del=false;wi=(wi+1)%W.length;s=350}setTimeout(tick,s)})()}
+document.querySelectorAll('[data-count]').forEach(function(n){var to=+n.dataset.count;if(rm)return;n.textContent='0';
+ var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){o.disconnect();var i=0;var iv=setInterval(function(){i++;n.textContent=i;if(i>=to)clearInterval(iv)},350)}});o.observe(n)});
+})();
+</script>
+</body>
+</html>
